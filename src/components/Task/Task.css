@@ -1,0 +1,23 @@
+.date {
+    list-style: none;
+    background-color: #FAFAEE;
+    padding: 5px 0 5px 10px;
+}
+.title{
+    padding: 8px 0 8px 25px;
+    cursor:pointer;
+    list-style: none;
+}
+.link {
+    text-decoration:none;
+    color:#000;
+}
+.choosenTitle {
+    composes:title;
+    background-color:#ddd;
+    color:green;
+}
+.tip {
+    margin-top: 20px;
+    padding-left:10px;
+}

@@ -1,0 +1,51 @@
+.container {
+    composes: container from "../Content/Content.css";
+}
+
+.title {
+    composes: title from "../Content/Content.css";
+}
+.date {
+    composes:date from "../Content/Content.css";
+}
+.titleBefore {
+    composes:titleBefore from "../Content/Content.css";
+}
+.dateBefore {
+    composes:dateBefore from "../Content/Content.css";
+}
+.write {
+    height: 25px;
+    width:260px;
+}
+.warning {
+    color:red;
+    font-size: 15px;
+    margin-left: 10px;
+}
+.writeContent {
+    margin-left: 20px;
+    margin-top: 20px;
+    width:87%;
+    height: 220px;
+    display: block;
+    font-size: 15px;
+    line-height: 15px;
+    resize:none;
+}
+.form {
+    margin-top: 20px;
+    padding-right: 14%;
+}
+.button {
+    float:right;
+    margin-right:10px;
+    width:60px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 10%;
+}
+.link{
+    text-decoration:none;
+    color:#000;
+}

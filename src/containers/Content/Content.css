@@ -1,0 +1,63 @@
+.container {
+    margin-left: 440px;
+    box-sizing: border-box;
+    height:100%;
+    padding-top: 60px;
+}
+.title {
+    background-color: #F2F2F2;
+    height:60px;
+    border-bottom: 1px solid #CCCCCC;
+}
+.state {
+    color:red;
+}
+.edit {
+    display:inline-block;
+    cursor:pointer;
+    width:60px;
+    text-align:center;
+    margin-left:10px;
+}
+.edit:hover {
+    background-color:#ddd;
+}
+.edit:active{
+    background-color:#FAFAEE;
+}
+.complete,.delete {
+    composes:edit;
+    margin-left:0;
+}
+.complete:hover,.delete:hover {
+    background-color:#ddd;
+}
+.complete:active,.delete:active{
+    background-color:#FAFAEE;
+}
+.title:hover .delete{
+    display:inline-block;
+}
+.delete {
+    margin-left:10px;
+    display:none;
+}
+.titleBefore {
+    line-height: 60px;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.date {
+    composes:title;
+    background-color: #FAFAEE;
+}
+.dateBefore {
+    composes:titleBefore;
+}
+
+.content {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size:20px;
+}

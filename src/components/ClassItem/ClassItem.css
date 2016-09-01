@@ -1,0 +1,26 @@
+.container {
+    margin: 5px 0;
+    padding-left:45px;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 1em;
+}
+.link {
+    text-decoration:none;
+    color:#000;
+}
+.selectedContainer {
+    composes:container;
+    background-color: #ddd;
+}
+.name {
+    display: inline-block;
+    padding:5px 10px 5px 10px;
+    width:110px;
+}
+.close {
+    visibility: hidden;
+}
+.container:hover .close {
+    visibility:visible;
+}

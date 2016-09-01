@@ -1,0 +1,8 @@
+.container {
+    composes: container from "../Content/Content.css";
+}
+.welcome {
+    margin-top:200px;
+    text-align: center;
+    font-size:30px;
+}

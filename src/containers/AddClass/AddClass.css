@@ -1,0 +1,63 @@
+.hidebg{
+     position:absolute;
+      left:0px;top:0px;
+      background-color:rgba(0,0,0,0.8);
+      width:100%;  /*宽度设置为100%，这样才能使隐藏背景层覆盖原页面*/
+      height:100%;
+      z-index:20 ;
+      display:none;
+}
+.container {
+    width:350px;
+    height:200px;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    margin: 150px auto;
+    overflow:hidden;
+}
+.newClass {
+    border-bottom: 1px solid #CCCCCC;
+    height:40px;
+    background-color: #DDDDDD;
+    line-height: 40px;
+}
+.title {
+    margin-left:10px;
+    display:inline;
+    padding-right:220px;
+}
+.close{
+    cursor:pointer;
+}
+.close:hover{
+    color:#FAFAEE;
+}
+.close:active {
+    position:relative;
+    top:1px;
+}
+.inputClass {
+    padding-left: 20px;
+}
+.input {
+    margin-top: 20px;
+    height:25px;
+}
+.warning {
+    height:15px;
+    margin-left: 100px;
+    margin-top: 10px;
+    color:red;
+}
+.buttons{
+    width:150px;
+    margin:10px auto;
+    overflow:hidden;
+}
+.button{
+    composes: button from "../Edit/Edit.css";
+}
+.button:active {
+    position:relative;
+    top:1px;
+}

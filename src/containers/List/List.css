@@ -1,0 +1,41 @@
+.container {
+    composes:container from '../Class/Class.css';
+    background-color: #fff;
+}
+.state{
+    padding-top: 10px;
+    background-color: #F2F2F2;
+    overflow: hidden;
+    border-bottom: 1px solid #CCCCCC;
+}
+.type {
+    list-style: none;
+    float: left;
+    margin-left:10px; 
+    margin-bottom: 10px;
+    font-size: 15px;
+    padding:7px 7px;
+    border-radius: 15%;
+    cursor:pointer;
+}
+:global(#filter) {
+    background-color:#fff;
+}
+.list{
+    overflow-y:auto;
+    height:calc(100% - 50px );
+}
+.footer{
+    composes: footer from '../Class/Class.css';
+    background-color:#F2F2F2;
+}
+.link {
+    text-decoration: none;
+    color:#000;
+}
+.add{
+    composes: add from '../Class/Class.css';
+}
+.add:hover {
+    color: #B37DB7;
+}
