@@ -37822,7 +37822,7 @@
 	                this.refs.dateWarning.innerHTML = "";
 	                this.refs.textWarning.innerHTML = "";
 	                return;
-	            } else if (!this.props.location.state && this.findSameTitle(date, title)) {
+	            } else if (this.findSameTitle(date, title)) {
 	                this.refs.titleWarning.innerHTML = "当天已存在相同任务！";
 	                this.refs.dateWarning.innerHTML = "";
 	                this.refs.textWarning.innerHTML = "";
@@ -37899,7 +37899,7 @@
 	                            'p',
 	                            { className: _Edit2.default.dateBefore },
 	                            '任务时间：',
-	                            _react2.default.createElement('input', { className: _Edit2.default.write, ref: 'dateInput', defaultValue: data.date }),
+	                            _react2.default.createElement('input', { className: _Edit2.default.write, type: 'date', ref: 'dateInput', defaultValue: data.date }),
 	                            _react2.default.createElement('span', { className: _Edit2.default.warning, ref: 'dateWarning' })
 	                        )
 	                    ),
@@ -37942,7 +37942,7 @@
 	                            'p',
 	                            { className: _Edit2.default.dateBefore },
 	                            '任务时间：',
-	                            _react2.default.createElement('input', { className: _Edit2.default.write, ref: 'dateInput' }),
+	                            _react2.default.createElement('input', { className: _Edit2.default.write, type: 'date', ref: 'dateInput' }),
 	                            _react2.default.createElement('span', { className: _Edit2.default.warning, ref: 'dateWarning' })
 	                        )
 	                    ),

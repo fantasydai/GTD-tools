@@ -36,7 +36,7 @@ export default class Edit extends Component {
                 this.refs.dateWarning.innerHTML="";
                 this.refs.textWarning.innerHTML="";
                 return;
-            } else if (!this.props.location.state&&this.findSameTitle(date,title)){
+            } else if (this.findSameTitle(date,title)){
                     this.refs.titleWarning.innerHTML="当天已存在相同任务！";
                     this.refs.dateWarning.innerHTML="";
                     this.refs.textWarning.innerHTML="";
@@ -102,7 +102,7 @@ export default class Edit extends Component {
 
                     <div className={styles.date}>
                         <p className={styles.dateBefore}>任务时间：
-                            <input  className={styles.write} ref='dateInput' defaultValue={data.date} />
+                            <input  className={styles.write} type="date" ref='dateInput' defaultValue={data.date} />
                             <span className={styles.warning} ref='dateWarning'></span>
                         </p>
                     </div>
@@ -132,7 +132,7 @@ export default class Edit extends Component {
 
                 <div className={styles.date}>
                     <p className={styles.dateBefore}>任务时间：
-                        <input  className={styles.write} ref='dateInput' />
+                        <input  className={styles.write} type="date" ref='dateInput' />
                         <span className={styles.warning} ref='dateWarning'></span>
                     </p>
                 </div>
